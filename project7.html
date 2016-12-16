@@ -11,25 +11,34 @@
 <body>
   <div id="programcontainer">
     <div id="drawingarea">
-      <svg id="screen" width="70%" viewBox="0 0 800 400">
+      <svg id="screen" class="pg" width="70%" viewBox="0 0 800 400">
       </svg>
     </div>
-    <div id="optionsarea">
+    <div id="optionsarea" class="no-copy">
       <select class="selector" id ="colorSelect">
         <option value="red">Red</option>
         <option value="blue">Blue</option>
         <option value="green">Green</option>
         <option value="yellow">Yellow</option>
+        <option value="purple">Purple</option>
+        <option value="black">Black</option>
+        <option value="rainbow">Rainbow</option>
+        <option value="white">Eraser</option>
       </select>
       <select class="selector" id ="shapeSelect">
         <option value="square">Square</option>
         <option value="circle">Circle</option>
-      </select>
+        <option value="triangle">Triangle</option>
+        <option value="t">Line</option>      </select>
       <select id ="sizeSelect">
+        <option value="5">5</option>
         <option value="10">10</option>
         <option value="15">15</option>
         <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
       </select>
+      <button id="button" class="test" onclick="clearBoard()">Clear</button>
     </div>
   </div>
 

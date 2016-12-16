@@ -15,3 +15,10 @@ select {
     padding: 2px 10px;
     width: 150px;
 }
+
+.no-copy{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
